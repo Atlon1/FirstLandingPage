@@ -1,0 +1,27 @@
+/// Main Styles File
+/// Here we import all the global Styles files we need for our project.
+
+@import "styles/normalize.scss";
+@import "styles/fonts.scss";
+@import "settings/mixins";
+@import "styles/colors";
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background-color: $color-backGround;
+  color: $secondary-colorFont;
+}
+
+.fourAi {
+
+  .wrapper {
+    max-width: 1440px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+  }
+
+
+}
+
+
