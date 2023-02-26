@@ -1,0 +1,164 @@
+/// Main Styles File
+/// Here we import all the global Styles files we need for our project.
+
+@import "styles/normalize.scss";
+@import "styles/fonts.scss";
+@import "settings/mixins";
+@import "styles/colors";
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background-color: $color-backGround;
+  color: $secondary-colorFont;
+  box-sizing: border-box
+}
+
+.fourAi {
+
+
+  .wrapper {
+    max-width: 1440px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__container {
+    display: flex;
+    margin-top: 159px;
+    margin-left: 152px;
+    max-margin-right: 152px;
+    @include tablet {
+      flex-direction: column;
+      margin: 159px 0 0 0;
+    }
+    @include mobile {
+      margin: 0;
+      width: 375px;
+    }
+
+    &__first {
+      max-width: 467px;
+      margin-right: 109px;
+      @include tablet {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0;
+      }
+    }
+
+    &__sec {
+      max-width: 560px;
+      display: flex;
+      margin-right: 109px;
+
+      flex-direction: column;
+      @include tablet {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0;
+        flex-direction: column;
+      }
+
+    }
+  }
+
+  h1 {
+    margin-top: 0;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -0.002em;
+    @include tablet {
+      margin-right: 16px;
+      font-size: 42px;
+      margin-left: 16px;
+    }
+    @include mobile {
+      margin-top: 48px;
+      font-size: 32px;
+      margin-right: 16px;
+      margin-left: 16px;
+    }
+  }
+
+  .text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    @include tablet {
+      margin-right: 16px;
+      margin-left: 16px;
+    }
+    @include mobile {
+      margin-right: 16px;
+      margin-left: 16px;
+    }
+  }
+
+  .container__sec__firstRow {
+    display: flex;
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+
+  .container__sec__secRow {
+    display: flex;
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+
+  .first__content {
+    max-width: 268px;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: $secondary-color;
+    transition: 1s;
+    margin: 15.5px 12px 15.5px 12px;
+
+    @include mobile {
+      max-width: 370px;
+    }
+  }
+
+  .first__content:hover {
+    cursor: pointer;
+    filter: brightness(150%);
+    scale: 1.05;
+  }
+
+  img {
+    width: 64px;
+    height: 64px;
+    padding: 15px;
+  }
+
+  h2 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 12px;
+  }
+
+  .text2 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    opacity: 0.6;
+    margin: 0 16px 0 16px;
+    margin-bottom: 24px;
+  }
+}
+
+
